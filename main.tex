@@ -46,54 +46,26 @@
 
 \begin{document}
 %
-\title{\LaTeX\ Author Guidelines for Seminar Works}
+\title{Proposal for Seminar Paper on Situated Visualization}
 %
 %\titlerunning{Abbreviated paper title}
 % If the paper title is too long for the running head, you can set
 % an abbreviated paper title here
 %
-\author{John Doe\inst{1,2} \and
-Jane Doe\inst{2}}
+\author{Jari Valentine}
 %
 %\authorrunning{F. Author et al.}
 % First names are abbreviated in the running head.
 % If there are more than two authors, 'et al.' is used.
 %
-\institute{ACME Inc. \\
-\email{john.doe@acme.inc.com}\\ \and
-CHAOM Laboratories\\
-\email{jane@chaom.com}}
+\institute{TU Wien \\
+      \email{jari.valentine@student.tuwien.ac.at}}
 %
 \maketitle              % typeset the header of the contribution
 %
-\begin{abstract}
-  The ABSTRACT is to be in fully-justified text, 
-   between two horizontal lines,
-   in one-column format, 
-   below the author and affiliation information. 
-   Use the word ``Abstract'' as the title, in 9-point Times, boldface type, 
-   left-aligned to the text, initially capitalized. 
-   The abstract is to be in 9-point, single-spaced type.
-   The abstract may be up to 300 words. \\
-   Leave one blank line after the abstract, 
-   then add the subject categories or keywords.
-   
-\keywords{Keywords \and should \and be \and separated}
-\end{abstract}
 %
 %
 %
-\section{Instructions}
-
-\subsection{Language}
-
-All manuscripts must be in English.
-
-\subsection{Margins and page numbering}
-
-All printed material, including text, illustrations, and charts,
-must be kept within a print area. Do not write or print anything
-outside the print area.
 
 \subsection{References}
 
@@ -103,15 +75,15 @@ the citation index in square brackets, for example~\cite{Lous90}. Where
 appropriate, include the name(s) of editors of referenced books.
 
 For your references please use the following algorithm:
-\begin{itemize} 
-\item \textbf{one} author: first 3 chars plus year -- 
-      e.g.\ \cite{Lous90}
-\item \textbf{two}, \textbf{three} or \textbf{four} authors: first char
-      of each family name plus year --  e.g.\ \cite{Fellner-Helmberg93} 
-      or \cite{Kobbelt97-USHDR} or \cite{Lafortune97-NARF}
-\item \textbf{more than 4} authors: first char of family name from 
-      first 3 authors followed by a '*' followed by the year -- 
-      e.g.\ \cite{Buhmann:1998:DCQ} or \cite{FolDamFeiHug.etal93} 
+\begin{itemize}
+      \item \textbf{one} author: first 3 chars plus year --
+            e.g.\ \cite{Lous90}
+      \item \textbf{two}, \textbf{three} or \textbf{four} authors: first char
+            of each family name plus year --  e.g.\ \cite{Fellner-Helmberg93}
+            or \cite{Kobbelt97-USHDR} or \cite{Lafortune97-NARF}
+      \item \textbf{more than 4} authors: first char of family name from
+            first 3 authors followed by a '*' followed by the year --
+            e.g.\ \cite{Buhmann:1998:DCQ} or \cite{FolDamFeiHug.etal93}
 \end{itemize}
 
 For BibTeX users the style can be used by setting the bibliography style to APA.
@@ -121,14 +93,18 @@ For BibTeX users the style can be used by setting the bibliography style to APA.
 Figures should always take up the available width. The figures caption should explain what is being depicted and should credit the authors as well. Each figure should always be mentioned in text at least once (as seen in Figure \ref{fig:example}).
 
 \begin{figure*}[!h]
-  \centering
-  \includegraphics[width=\linewidth]{figures/sampleFig.jpg}
-  \caption{For any figure please always reference and cite the authors or technique. Please also provide a source where the figure was taken from.}
-  \label{fig:example}
+      \centering
+      \includegraphics[width=\linewidth]{figures/sampleFig.jpg}
+      \caption{For any figure please always reference and cite the authors or technique. Please also provide a source where the figure was taken from.}
+      \label{fig:example}
 \end{figure*}
 
-\subsection{Further Guidelines}
-Further and more detailed information about the guildlines are available at: \url{https://www.cvast.tuwien.ac.at/student-guidelines}.
+\input{sections/problem-description}
+
+\input{sections/expected-results}
+
+\input{sections/method}
+
 %
 % ---- Bibliography ----
 %
@@ -137,5 +113,11 @@ Further and more detailed information about the guildlines are available at: \ur
 %
 \bibliographystyle{alpha}
 \bibliography{biblio}
+
+\section{Appendix}
+\subsection{ROUGH WORK PLAN}
+Work packages (title, goal, description, expected results)
+Time plan including milestones
+- realistic estimation of dates
 %
 \end{document}
