@@ -1,102 +1,65 @@
 \section{Problem Description (Why?)}
 
-% - Introduction
-% - Context
-% - Status Quo
-% - What is the problem?
-% - Why is it a problem?
-% - What is unknown?
-% - What could be improved?
-% - What is the goal of the project?
-
 \subsection{Introduction}
 
-% What is situated visualisation?
-Situated visualization can be defined as a situated data representation that is purely visual and typically on a screen.
-And situated data representation is data presentation where the presentation itself must be somewhat close to the data's physical referent \cite{WYP17}.
-Keep in mind that this is only one definition of situated visualization and inconsistency could be a potential problem we need to discuss.
+Situated visualization is a situated data representation that is purely visual and typically on a screen. Here, situated data representation is data presentation where the presentation itself must be somewhat close to the data's physical referent \cite{WYP17}.
+The concept is relevant in multiple fields including HCI and information visualization \cite{WYP17} and is also extensively being explored in areas such as augmented reality and ubiquitous computing \cite{BKT+22}.
 
-% why is it relevant to: our Institute of Visual Computing and Human-Centered Technology, the Centre for Visual Analytics Science and Technology, specifically Information Visualzation and Visual Analytics, and my programme Media and Human-Centered Computing
-
-"The concept has gained interest from multiple research communities, including visualization,
-human-computer interaction (HCI) and augmented reality." \cite{WYP17}
-
-“Researchers in related areas such as ubiquitous computing (UbiComp) [48] and ambient/ peripheral displays [53, 40] have created a variety of physical information displays.” \cite{WYP17}
-
-“Examples of situated and embedded data representations have been independently explored in a variety of research areas, including information visualization, augmented reality, and ubiquitous computing.” \cite{BKT+22}
-
-“The area of situated visualization follows a strand of research agendas in visualization that are concerned with moving beyond traditional desktop applications [75] such as ‘Ubiquitous Analytics’ [26], ‘Immersive Analytics’ [3, 29], or ‘Situated Analytics’ [27, 90].” \cite{BKT+22}
-
-Exmaples (manufacturing, maintance, AI-assisted site visits)
-
-A comprehensive overview lacks withint this field.
+One approach to situated visualization can be found in, for example, a physical site visit. An urban planner might use a system like SiteLens to visualize data directly within the real world.
+For instance, overlaying carbon monoxide (CO) readings, which are collected in real-time, onto the street to reveal the higher CO levels correspond to cars idling there \cite{WF09}.
+A comprehensive overview of available approaches lack within this field.
 
 \subsection{Context}
 
-% Where does the topic belong (broaden):
-as mentioned above
-and part of the trend toward VR and AR and context-aware data representation within HCI and visualisation.
-Growing VR tech, becoming better and better, the need and will to use those thech for purpose and not just entertainment.
-The gravitation towards AR, not wanting to leave our own world, having it add on to our own world.
+Beyond the relevant areas mentioned above, we can broaden where this topic belongs to outside of traditional research fields.
+Situated visualization is most definitely part of the trend toward virtual and augmented reality.
+VR technology has been growing steadily, becoming better and better, and expanding beyond entertainment as the desire to use it for more purposeful applications becomes strong.
 
 \subsection{Status Quo}
 
-% WHAT EXISTS
-% What is currently known.
+\cite{BKT+22} worked on an extensive list of papers to conclude perspectives on situated visualization and found that the most broad definition is by White and Feiner \cite{WF09}. They state situated visualization ``is related to and displayed in its environment".
+They also found Willet et al. to build on that work introducing concepts like the ``physical data referent" as mentioned previously \cite{WYP17}.
+While the first definition dates back from 2009 the latter is more recent, from 2022, and has since been commonly used to define situated visualization in research.
 
-\cite{BKT+22} worked on an exhaustive list of papers to conclude perspectives on situated visualisation and found that the most broad definition is by White and Feiner \cite{WF09}: situated visualization "is related to and displayed in its environment".
-They also found Willet et al. build on that work introducing concepts as "physical data referent" as mentioned previously \cite{WYP17}.
-While the first definition dates back from 2009 the latter is more recent, from 2022, and has been commonly used to define SV in research.
-Willet et al. also make a distinction between situated and embedded visualisations which again introduces the problem of what definition should we use? Where does situated visualization stop?
-In practice we find, though not limited to, the following terms: on-site, in-situ, ambient, ubiquitous, location-based, embodied, embedded, prosemic, contextual.
+Willet et al. also makes a distinction between situated and embedded visualizations \cite{WYP17} which makes us ask the following questions.
+What definition should we follow?
+Are the same definitions used outside of research, where we will find exactly the type of approaches which might be insightful? And what other terms might be used to refer to basically the same concept?
+In practice we find, though not limited to, the following terms: on-site, in-situ, ambient, ubiquitous, location-based, embodied, embedded, contextual.
 
 \subsection{What is the problem}
 
-% WHAT'S MISSING
-there is no structured overview of all approaches.
-there are many terms that in pratice mean the same thing.
+There is currently no structured overview of all approaches.
+Furthermore, Bressa et al. highlight the second issue: ``This wide appropriation of situated visualization as a research concept has led to a disconnected terminology..." and ``As a result, interpretations of what situatedness and situated visualization are, and how these concepts are understood in the current literature, remain unclear.'' \cite{BKT+22}.
+Similarly Willett et al. states that the term `situated' has been previously used in different ways, before the widespread adoption of their definition. And that ``the benefits, trade-offs, and even the language necessary to describe and compare different approaches remains limited.''. \cite{WYP17}
+
+Beyond the term ``situated visualization'', we could argue that the concept dates back to the 1970, when te U.S. Department of Defense starting operating their GPS system (alongside the USSR's GLONASS). This was emphasized by Spiekermann back in 2004, when the term ``location-based services'' was used to describe services that integrate a mobile device's location with other data to provide value to a user. \cite{SV04}
+While today the term `location-based' might directly by used to refer to situated visualization approaches.
 
 \subsection{Why is it a problem?}
 
-% WHY THAT MATTERS (THAT IT's MISSING)
-% Not just that something is missing, but why it matters that this is missing.
+Without a clear overview of all approaches, designers have to independently looking into what exists, encountering the same problems that could be avoided by documenting the findings systematically.
 
-We could use an overview that lets use consider every options withint a glance.
-Without needing to dive into research each time.
-We want to known where terms connect so we can compare approaches eventhough they were initially defined diffently.
+When terminology shifts, we argue that previous explorations of similar concepts easily get neglected, once again forcing researchers to repeat challenges that might have already been documented long ago.
 
 \subsection{What is unknown?}
 
-% SPECIFY KNOWLEDGE GAP
-Beyond what has already been said, no overview of situatued visuation techniques.
-What else which is unclear is further how these approaches differ in purpose, interaction or context.
-How can we catagorize? How can we map them out and see where they connect or differ?
-What is being developped/discovered currently?
-Are their ethical and privacy problems with some of the innovations?
+Beyond what has been stated before, we now look into specific knowledge gaps that could be included as metadata within a comprehensive overview. We can ask questions such as:
+\begin{enumerate}
+    \item Does the approach raise any ethical concerns?
+    \item Can we categories or cluster certain approaches?
+    \item What is its predecessor/which approaches is this a predecessor to?
+\end{enumerate}
+These are all self-explanatory in how it can help a user of the overview decide on what approach suits their application best.
 
 \subsection{What could be improved?}
 
-% WHAT THIS WILL CONTRIBUTE
-Creating an overview would clarify terminology, catogories and help research opportunities.
-Can we rate approaches to situated visualisation?
-Can we label what problems each approaches is best a solving?
-Add a timeline of approaches and what caused it to come about in that time.
-We then can understand why certain approaches got here which helps us go back to its purpose,
-then again a technologies initial purpose can completely be forgotten by the current usage,
-we can compare and see how we might learn from the past.
-Can we rank them based on their risks or how much data they'd need/consider privacy (would GDPR be happy?) and ethics.
-A unified overview, which in theory comes close to the effects of a standard can help us all communicate in the same language.
+We can not systematically change the way we use definitions and terms, nor can we change how concepts were defined or referred to in the past. But what we \textit{can do} is account for all the concerns by e.g. considering every term we find and documenting their use in a way we can understand how meanings shifted.
+
+As Bawden (2001) states, ``...any terminology built around this central concept is in danger of being constructed on `shifting sands''' \cite{Baw01}. To at least try and come close to an exhaustive overview, it is therefore important to consider previously used terminologies, as these reveal insights and boundaries. Although this concern can be raised for almost any research topic when creating an overview, it is especially important within situated visualization, since inconsistent terminology frequently arises, which is also highlight by several major papers in this field .
 
 \subsection{What is the goal of the project?}
 
-% WHAT THIS WILL CONTRIBUTE
-The goal of this work is to provide a structed state-of-the-art overview of approahces situated visualisation
-including positive/negative examples, ethical considerations, initial prupose - current purpose, visualized in a timeline.
-
-What approaches empose dangers, can we try and be responsible and predict the dangers of our technologies?
-In contrast, situated visualisation appraoches have been proven to be great benefit, not only in privat sectors but also in public spaces
-<Cite>, has proven how this works with example...
-Can we list possitive and negative examples of real world scenarios, where things have gone wrong in the past with a approach,
-or in contrast how we have benefited (mainly without) any sideeffects? If any, what sideeffects where there?
-With a solid overview of not only what approaches excist but also listing how we define possitive and negative examples,
-the overview can help any decision being made on what approach to use.
+The main goal of this project is to provide a structured and comprehensive state-of-the-art overview of available approaches to situated visualization.
+Furthermore, we want to eliminate the previously identified concerns by using methods that ensure clarity and consistency.
+It is important for the overview to be both extensive and accessible/usable.
+The following section outlines how this will be achieved.
